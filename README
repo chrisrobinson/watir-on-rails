@@ -16,6 +16,9 @@ If you're running Windows, you'll need to
 If you're fortunate enough to be on OS X, you can
   gem install safariwatir
 
+If you're running Linux, you'll need to:
+  gem install firewatir
+
 
 Installation
 ============
@@ -25,6 +28,9 @@ You have probably already done this, but just in case...
 
 For version compatible with Rails 2.3.2 (provided by Chip Castle <chip@chipcastle.com>):
   script/plugin install git://github.com/chip/watir-on-rails.git 
+
+For version compatible with Firewatir and Rails 2.3.2:
+  script/plugin install git://github.com/chrisrobinson/watir-on-rails.git
 
 Generating Tests
 ================
