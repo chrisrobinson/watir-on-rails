@@ -69,7 +69,7 @@ module WatirOnRails
   end
 
   def load_browser_class
-    @browser_class ||=
+    @browser_class ||=                                                                          
     case RUBY_PLATFORM
     when /darwin/i
       require "safariwatir"
@@ -77,8 +77,11 @@ module WatirOnRails
     when /mswin/i
       require "watir"
       Watir::IE
+    when /linux/i
+      require "firewatir"
+      Watir::Browser
     else
-      raise "Watir is only supported on Windows and Mac OS X."
+      raise "Watir is only supported on Windows, OS X, and Linux."
     end
   end
 end
