@@ -13,7 +13,6 @@ module WatirOnRails
   end
 
   def self.included(test)
-    test.use_transactional_fixtures = false
     class << test
       include ExposeOptions
     end
